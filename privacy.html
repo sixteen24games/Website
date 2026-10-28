@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="assets/bee.svg" type="image/svg+xml">
+<title>Privacy Policy · 1624 Games</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="How 1624 Games' puzzle games handle your data.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,700..800&family=Instrument+Sans:wght@400;600;700&display=swap">
+<style>
+/* Layout: one honey-and-ink column; the bee mark leads, games sit in app-icon cards, the policy reads like a document. */
+:root {
+  --bg: #fdfcf9;
+  --surface: #f5f1e8;
+  --ink: #22252c;
+  --muted: #5a5e69;
+  --line: #e4ded1;
+  --honey: #e8b23d;
+  --amber: #a85c02;
+  --chip: #fbefd2;
+  --display: "Archivo", "Arial Black", system-ui, sans-serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #16181d; --surface: #1e2127; --ink: #f1ede4; --muted: #a7aab3;
+    --line: #2f333b; --honey: #e8b23d; --amber: #f0b545; --chip: #2c2618;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #16181d; --surface: #1e2127; --ink: #f1ede4; --muted: #a7aab3;
+  --line: #2f333b; --honey: #e8b23d; --amber: #f0b545; --chip: #2c2618;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: var(--amber); text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--honey); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--display); font-stretch: 112%; line-height: 1.1; text-wrap: balance; margin: 0; }
+
+/* Header */
+.site-head { border-bottom: 1px solid var(--line); }
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 0.9rem; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 0.6rem; color: var(--ink); text-decoration: none; }
+.brand svg { width: 2.6rem; height: auto; }
+.wordmark { display: flex; flex-direction: column; line-height: 0.95; font-family: var(--display); font-weight: 800; font-stretch: 125%; }
+.wordmark b { font-size: 1.35rem; letter-spacing: 0.01em; }
+.wordmark small { font-size: 0.62rem; letter-spacing: 0.28em; font-weight: 700; }
+.site-nav { display: flex; gap: 1.25rem; flex-wrap: wrap; font-weight: 600; font-size: 0.95rem; }
+.site-nav a { color: var(--ink); text-decoration: none; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--amber); }
+
+/* Footer */
+.site-foot { border-top: 1px solid var(--line); margin-top: 5rem; color: var(--muted); font-size: 0.9rem; }
+.site-foot .wrap { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-block: 1.75rem; }
+.site-foot nav { display: flex; gap: 1.25rem; }
+.site-foot a { color: var(--muted); }
+
+.eyebrow { font: 700 0.75rem/1 var(--display); font-stretch: 125%; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); margin: 0 0 0.9rem; }
+</style>
+</head>
+<body>
+<style>
+.policy { display: grid; grid-template-columns: 14rem minmax(0, 1fr); gap: 3rem; padding-block: 3.5rem 0; }
+.policy-head { grid-column: 1 / -1; max-width: 46rem; }
+.policy-head h1 { font-size: clamp(2.1rem, 5vw, 3.2rem); font-weight: 800; }
+.policy-head .meta { color: var(--muted); margin: 0.75rem 0 0; font-size: 0.95rem; }
+.draft { margin-top: 1.25rem; padding: 0.8rem 1rem; border-left: 4px solid var(--honey); background: var(--chip); border-radius: 0 0.6rem 0.6rem 0; font-size: 0.95rem; }
+.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 1.5rem); align-self: start; font-size: 0.92rem; }
+.toc p { font: 700 0.72rem/1 var(--display); font-stretch: 125%; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.75rem; }
+.toc ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.45rem; }
+.toc a { color: var(--ink); text-decoration: none; }
+.toc a:hover { color: var(--amber); }
+.policy-body { max-width: 42rem; min-width: 0; }
+.policy-body section { padding-top: 0.5rem; margin-bottom: 2.25rem; scroll-margin-top: 1.5rem; }
+.policy-body h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 0.75rem; }
+.policy-body h3 { font-size: 1.05rem; font-weight: 800; margin: 1.4rem 0 0.4rem; }
+.policy-body p, .policy-body li { margin: 0 0 0.7rem; }
+.policy-body ul { padding-left: 1.2rem; margin: 0 0 0.9rem; }
+.summary { background: var(--surface); border-radius: 1rem; padding: 1.25rem 1.5rem; }
+.summary ul { margin: 0; }
+.summary li { margin-bottom: 0.45rem; }
+.table-scroll { overflow-x: auto; margin: 0.5rem 0 1rem; }
+table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--line); }
+th { font-weight: 700; }
+thead th { font: 700 0.72rem/1.2 var(--display); font-stretch: 125%; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+@media (max-width: 860px) {
+  .policy { grid-template-columns: 1fr; gap: 1.5rem; padding-block: 2rem 0; }
+  .toc { position: static; background: var(--surface); border-radius: 1rem; padding: 1rem 1.25rem; }
+}
+</style>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="1624 Games home">
+      <svg class="brand-bee" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="353 508 1132 1013"><defs><style>
+      .cls-1{fill:#22252c}
+      .cls-2{fill:#e8b23d}
+      .cls-3{fill:#c97802}
+      .cls-4{fill:#d79308}
+      .cls-5{fill:#b36202}
+    </style></defs>
+      <path d="M487.5 511.9 L644 600.4 L675.5 529 L822.2 529 L956.9 746.1 L1001.6 720.9 L1095.7 774.1 L1108.4 756 L1234.4 684.7 L1276.5 579.1 L1365.7 515.6 L1393.6 531.4 L1389.6 563.6 L1304.9 596.4 L1268 689.6 L1311.5 714.2 L1357.8 629.3 L1454 574.9 L1480.7 594.8 L1472.9 626 L1384.5 648.5 L1340.3 730.3 L1420 775.4 L1420 952.2 L1280.4 1031.2 L1139 951.3 L1139 1022 L991.8 1105.3 L959 1086.7 L959 1226.2 L877 1264 L877 1351.6 L801.5 1383.3 L849.9 1517.1 L711.6 1391.6 L580 1339.6 L580 1060.9 L834.3 917 L690.7 917 L605.3 965.3 L489 899.5 L489 805.3 L357 730.6 L357 585.7 Z" class="cls-1"/>
+      <path d="M487.4 549.3 L585 604.5 L585 711.7 L487.5 766.9 L390 711.7 L390 604.3 Z" class="cls-2"/>
+      <path d="M804.1 562 L919.9 749.9 L675.7 611.7 L697.8 562 Z" class="cls-3"/>
+      <path d="M618.1 617.8 L900.9 777.8 L843.2 810.5 L843.2 834.1 L618.1 706.7 Z" class="cls-2"/>
+      <path d="M1247 715.1 L1387 794.2 L1387.1 932.9 L1279.8 992.9 L1140 913.8 L1139.5 776.5 Z" class="cls-2"/>
+      <path d="M604.8 739.3 L688.1 786.4 L688.1 880.6 L605.4 927.3 L521.5 879.9 L521.5 786.4 Z" class="cls-4"/>
+      <path d="M1002.1 758.1 L1105.2 816.4 L1104.9 1003.4 L991.5 1067.6 L878 1003.3 L877.9 828.4 Z" class="cls-3"/>
+      <path d="M722.3 801.4 L843 869.7 L843 884 L722.3 884 Z" class="cls-4"/>
+      <path d="M843 949.6 L843 994.6 L754 1045 L714.2 1022.4 Z" class="cls-2"/>
+      <path d="M849.3 1027.6 L926.9 1069.8 L926.9 1166.3 L782 1084 L782.4 1066.9 Z" class="cls-5"/>
+      <path d="M680.8 1041.3 L749 1079.8 L749 1162 L681.5 1200.2 L613 1161.5 L613 1079.6 Z" class="cls-2"/>
+      <path d="M785.4 1179.3 L873 1228.9 L843 1243.5 L843 1292.3 L714.4 1219.5 Z" class="cls-3"/>
+      <path d="M613.1 1256.1 L786.4 1354.1 L746.1 1370.1 L613.1 1317.8 Z" class="cls-2"/>
+      <path d="M487.4 549.3 L585 604.5 L585 711.7 L487.5 766.9 L390 711.7 L390 604.3 Z" class="cls-2"/>
+      <path d="M604.8 739.3 L688.1 786.4 L688.1 880.6 L605.4 927.3 L521.5 879.9 L521.5 786.4 Z" class="cls-4"/>
+      <path d="M618.1 617.8 L900.9 777.8 L843.2 810.5 L843.2 834.1 L618.1 706.7 Z" class="cls-2"/>
+      <path d="M1247 715.1 L1387 794.2 L1387.1 932.9 L1318.9 894.1 L1319 824.3 L1255.4 788.4 L1207.2 815.5 L1139.5 776.5 Z" class="cls-2"/>
+      <path d="M1139.5 776.5 L1207.2 815.5 L1207 883.9 L1271.8 920.6 L1318.9 894.1 L1387.1 932.9 L1289.6 988.2 L1279.8 992.9 L1140 913.8 Z" class="cls-3"/>
+      <path d="M697.8 562 L804.1 562 L919.9 749.9 L675.7 611.7 Z" class="cls-3"/>
+      <path d="M930.3 940.8 L991.8 975.5 L1053.1 940.7 L1104.8 977.2 L1104.9 1003.4 L991.5 1067.6 L878 1003.3 L878 976.8 Z" class="cls-3"/>
+      <path d="M680.8 1041.3 L749 1079.8 L749 1162 L681.5 1200.2 L613 1161.5 L613 1079.6 Z" class="cls-2"/>
+      <path d="M1002.1 758.1 L1105.2 816.4 L1105.7 836.1 L1052.1 867.5 L991.9 834.4 L931.2 867.7 L878 836.5 L878 828.3 Z" class="cls-2"/>
+      <path d="M991.9 834.4 L1052.1 867.5 L1053.1 940.7 L991.8 975.5 L930.3 940.8 L931.2 867.7 Z" class="cls-5"/>
+      <path d="M785.4 1179.3 L873 1228.9 L843 1243.5 L843 1292.3 L714.4 1219.5 Z" class="cls-3"/>
+      <path d="M849.3 1027.6 L926.9 1069.8 L926.9 1166.3 L849.3 1122.2 Z" class="cls-5"/>
+      <path d="M722.3 801.4 L843 869.7 L843 884 L722.3 884 Z" class="cls-4"/>
+      <path d="M878 836.5 L931.2 867.7 L930.3 940.8 L878 976.8 Z" class="cls-4"/>
+      <path d="M1105.7 836.1 L1104.8 977.2 L1053.1 940.7 L1052.1 867.5 Z" class="cls-4"/>
+      <path d="M843 949.6 L843 994.6 L754 1045 L714.2 1022.4 Z" class="cls-2"/>
+      <path d="M613.1 1256.1 L698.2 1304.2 L698.2 1351.1 L613.1 1317.8 Z" class="cls-2"/>
+      <path d="M849.3 1027.6 L849.3 1122.2 L782 1084 L782.4 1066.9 Z" class="cls-3"/>
+      <path d="M698.2 1304.2 L786.4 1354.1 L746.1 1370.1 L698.2 1351.1 Z" class="cls-3"/>
+      <path d="M1255.4 788.4 L1319 824.3 L1318.9 894.1 L1271.8 920.6 L1207 883.9 L1207.2 815.5 Z" class="cls-1"/>
+    </g>
+  </svg>
+      <span class="wordmark"><b>1624</b><small>GAMES</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#games">Games</a>
+      <a href="index.html#approach">How we work</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap policy">
+  <header class="policy-head">
+    <p class="eyebrow">1624 Games</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Covers Scrattle, Gem Buzz, Hexcape and Hexcoil. Effective date: to be set at launch.</p>
+    <p class="draft"><strong>Draft.</strong> This policy describes how our games are built to work at launch. It will be reviewed before the games are released, and this notice removed.</p>
+  </header>
+
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#device">Stored on your device</a></li>
+      <li><a href="#ads">Advertising</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#purchases">Purchases</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#transfers">Retention and transfers</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact-us">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <div class="policy-body">
+    <section id="summary">
+      <h2>Summary</h2>
+      <div class="summary">
+        <ul>
+          <li>Our games have no accounts. We never ask for your name, email address or contacts.</li>
+          <li>Your progress and settings are saved on your device. We don't receive them.</li>
+          <li>The games show ads through Unity LevelPlay, which may collect device data such as your advertising identifier. Where the law requires it, we ask for your consent first.</li>
+          <li>If you agree, we measure how the games are played with Unity Analytics, to tune difficulty and fix problems.</li>
+          <li>Purchases are handled by Apple or Google. We never see your payment details.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="device">
+      <h2>What is stored on your device</h2>
+      <p>Each game saves your progress in a file on your device. We don't receive this file, and uninstalling the game deletes it.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th scope="col">Game</th><th scope="col">What it saves</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Scrattle</th><td>Puzzles in progress and finished, solve times, your streak, stars, unlocked archive days, settings, and whether you bought Remove Ads.</td></tr>
+            <tr><th scope="row">Gem Buzz</th><td>Best scores, unlocked boards, your gem collection, settings, and whether you bought Remove Ads.</td></tr>
+            <tr><th scope="row">Hexcape</th><td>Levels completed and stars, daily puzzle progress, free hints, settings, and whether you bought Remove Ads.</td></tr>
+            <tr><th scope="row">Hexcoil</th><td>Best scores, Adventure stars, settings, and whether you bought Remove Ads.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="ads">
+      <h2>Advertising</h2>
+      <p>Our games show ads through <strong>Unity LevelPlay</strong>, an ad mediation service. LevelPlay works with ad networks such as Unity Ads and Google AdMob. To show ads, measure them and prevent fraud, LevelPlay and these networks may collect:</p>
+      <ul>
+        <li>your device's advertising identifier (IDFA on iOS, Advertising ID on Android);</li>
+        <li>your IP address, used to estimate your approximate location;</li>
+        <li>device and app information, such as model, operating system, language and app version;</li>
+        <li>how you interact with ads.</li>
+      </ul>
+      <p>In the EEA, the UK, Switzerland and other places where the law requires it, we ask for your consent with Google's consent tool before ads are personalized. On iOS, we ask permission to track through Apple's App Tracking Transparency prompt. If you say no, ads aren't personalized using your advertising identifier. In US states with privacy laws, you can opt out of the "sale" or "sharing" of your data for targeted advertising in each game's settings.</p>
+      <p>Videos that give you a reward are always optional. A one-time Remove Ads purchase turns off the other ads.</p>
+      <p>Read more in Unity's <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Game Player and App User Privacy Policy</a> and Google's page on <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</p>
+    </section>
+
+    <section id="analytics">
+      <h2>Analytics</h2>
+      <p>Only if you agree, we use <strong>Unity Analytics</strong> to record how our games are played: for example, levels or puzzles started and finished, scores and solve times, hints used, and whether optional videos were watched. These events come with device and app information and a random identifier for your installation of the game. They don't include your name or contact details.</p>
+      <p>We use this to tune difficulty, find levels that are too hard or too easy, and fix problems.</p>
+    </section>
+
+    <section id="purchases">
+      <h2>Purchases</h2>
+      <p>Remove Ads is bought through the Apple App Store or Google Play, which process your payment under their own privacy policies. We receive only a confirmation that the purchase was made, so the game can turn ads off and restore the purchase if you reinstall.</p>
+    </section>
+
+    <section id="choices">
+      <h2>Your choices</h2>
+      <ul>
+        <li><strong>Ad consent and analytics:</strong> change your choice at any time in the game's Settings, under Privacy.</li>
+        <li><strong>iOS tracking:</strong> in the Settings app, go to Privacy &amp; Security, then Tracking.</li>
+        <li><strong>Android advertising ID:</strong> reset or delete it in your device's Google settings, under Ads.</li>
+        <li><strong>On-device data:</strong> uninstall the game to delete everything it saved.</li>
+      </ul>
+    </section>
+
+    <section id="rights">
+      <h2>Your rights</h2>
+      <p>Depending on where you live, you may have the right to access, correct or delete personal data about you, to object to or restrict how it's used, to withdraw consent, and to complain to your local data protection authority.</p>
+      <p>We don't hold accounts or contact details, so the data about you sits mostly with our advertising and analytics partners, linked to your device's identifiers. Contact us and we'll help you make a request to them, or delete analytics data linked to your installation.</p>
+    </section>
+
+    <section id="children">
+      <h2>Children</h2>
+      <p>Our games are made for players aged 13 and up and are not directed to children. We don't knowingly collect personal information from children under 13, or under the minimum age in your country. Our ad service is set up to treat players as not child-directed. If you believe a child has used one of our games and data was collected, contact us and we'll help remove it.</p>
+    </section>
+
+    <section id="transfers">
+      <h2>Data retention and transfers</h2>
+      <p>On-device data stays until you uninstall the game. Analytics data is kept only as long as we need it to improve the games. Our partners may process data in countries other than yours, under their own safeguards.</p>
+    </section>
+
+    <section id="changes">
+      <h2>Changes to this policy</h2>
+      <p>If our games' data practices change, we'll update this page and the effective date at the top. If a change is significant, we'll also tell you in the game.</p>
+    </section>
+
+    <section id="contact-us">
+      <h2>Contact us</h2>
+      <p>For privacy questions or requests, email <a href="mailto:hello@1624games.com">hello@1624games.com</a>.</p>
+      <p>1624 Games is responsible for the personal data collected through our games.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 1624 Games</span>
+    <nav aria-label="Footer">
+      <a href="index.html#games">Games</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:hello@1624games.com">hello@1624games.com</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
