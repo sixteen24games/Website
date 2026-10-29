@@ -22,4 +22,4 @@ Settings → Pages → Source: *Deploy from a branch*, branch `main`, folder `/ 
 - **Contact email:** `hello@1624games.com` is a placeholder, in `index.html` (contact section and footer) and `privacy.html` (contact section and footer).
 - **Privacy policy:** remove the *Draft* notice, set the effective date, and add the legal entity's name and address once the policy has been reviewed.
 - **Game status:** each game card says "Coming soon to the App Store and Google Play". Replace it with store links as the games launch.
-- **app-ads.txt:** only Google AdMob is listed so far. Add LevelPlay's lines (ironSource and the networks it mediates, from the LevelPlay dashboard) before the first game launches; once the file exists, networks not in it can lose ad demand. Each game's store listing must give https://1624games.com as the developer website for the file to count.
+- **app-ads.txt:** Google AdMob, ironSource (publisher 695901) and ironSource's resellers, copied from its docs page on 2026-10-28. Recopy the reseller list now and then, since ironSource changes it. Each game's store listing must give https://1624games.com as the developer website for the file to count.
