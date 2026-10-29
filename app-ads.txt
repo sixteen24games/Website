@@ -1,0 +1,5 @@
+# 1624 Games: the ad sellers allowed to sell ads in our games (Scrattle, Gem Buzz, Hexcape, Hexcoil).
+# Every game lists https://1624games.com as its developer website, so this one file covers all of them.
+
+# Google AdMob
+google.com, pub-9213174275620974, DIRECT, f08c47fec0942fa0
